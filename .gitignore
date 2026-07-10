@@ -31,6 +31,9 @@ ENV/
 Thumbs.db
 desktop.ini
 
+# Data
+ABD/
+
 # Results and drafts
 results/
 results-v1/
