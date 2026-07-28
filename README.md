@@ -93,7 +93,7 @@ explicitly, is written to `indicator_duration.csv`.
 
 ## Citation
 
-Update on acceptance.
+Will be updated on acceptance.
 
 ## License
 
