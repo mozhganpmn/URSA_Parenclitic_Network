@@ -46,16 +46,20 @@ jupyter lab parenclitic_urban_resilience.ipynb
 ```
 
 Set `DATA_DIR` and `RESULTS_DIR` in the configuration cell. Execute all cells in
-order; the permutation null (`N = 500`) and the clip-robustness sweep dominate
-the runtime.
+order. The synthetic calibration, the permutation null (`N = 500`, with an
+`N = 10^4` rerun for the single confirmed year), and the clip-robustness sweep
+dominate the runtime; the final supplementary-experiments cell adds a further
+high-`N` permutation pass and can be skipped if
+`results/supplementary_experiments.json` is not needed.
 
 ## Outputs
 
 | File | Contents |
 |---|---|
 | `results/paper_numbers.json` | every quantity reported in the paper, to six decimals |
-| `results/indicator_duration.csv` | indicator-level anomaly durations (Table V) |
-| `results/clip_check_output.json` | training-correlation clip sensitivity (Supp. S1) |
+| `results/indicator_duration.csv` | indicator-level anomaly durations (Table 5) |
+| `results/clip_check_output.json` | training-correlation clip sensitivity (Appendix A) |
+| `results/supplementary_experiments.json` | supplementary robustness experiments (high-N permutation, DCI BH family sizes, 2023 drivers) |
 | `results/*.png` | manuscript figures |
 
 ## Implementation notes
@@ -86,16 +90,16 @@ is not plotted for 2015–2017. Only `AHI` and `EWS_CSD` are min-max normalised 
 the EWS panel; lag-1 autocorrelation and correlation length are shown in native
 units.
 
-**Table V ties.** Eleven indicator pairs reach five consecutive anomalous years
+**Table 5 ties.** Eleven indicator pairs reach five consecutive anomalous years
 and are not separable from one another. The published table is cut at duration
 ≥ 6; the full ranking, with the aggregation rule and tie-break stated
 explicitly, is written to `indicator_duration.csv`.
 
 ## Citation
 
-Will be updated on acceptance.
+A citation will be available when the paper is accepted.
 
 ## License
 
-MIT for the code. The Vancouver indicator dataset is available from the
-corresponding author on reasonable request.
+MIT for the code. The Vancouver indicator dataset in `data/` is released
+alongside the code for research and replication use.
