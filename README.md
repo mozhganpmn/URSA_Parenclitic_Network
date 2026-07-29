@@ -62,38 +62,6 @@ high-`N` permutation pass and can be skipped if
 | `results/supplementary_experiments.json` | supplementary robustness experiments (high-N permutation, DCI BH family sizes, 2023 drivers) |
 | `results/*.png` | manuscript figures |
 
-## Implementation notes
-
-**The `20σ` cap is an aggregation-layer device.** Indicator and domain anomaly
-scores, TAV, and the edge-weight plots are means of `w`, so a single extreme
-pair would dominate them; the cap prevents that. The cap must not be applied
-before the activation comparison, because the corrected threshold at `n = 3`
-(32.619) exceeds it. Activation and the permutation null therefore use the
-uncapped weight, which is also the quantity whose square follows the `F(2, n-2)`
-law that the synthetic calibration validates. `CAP_APPLIES_TO_ACTIVATION` in the
-configuration cell controls this; the notebook prints how many activations a
-pre-threshold cap would suppress.
-
-**Two lag-1 autocorrelations appear in the paper and are not interchangeable.**
-The mean lag-1 autocorrelation of the *raw sub-indicator series* (≈ 0.59)
-motivates the circular-block null. The mean lag-1 autocorrelation of the
-*anomaly series* (≈ 0.35) is a separate quantity. Both are reported in
-`paper_numbers.json` under distinct keys.
-
-**`n_eff` can exceed `n`.** The Bartlett correction
-`n_eff = n(1 - r1*r2)/(1 + r1*r2)` raises the effective sample size above the
-nominal count when the two domain series have lag-1 autocorrelations of opposite
-sign.
-
-**`EWS_CSD` is undefined before 2018** under expanding-window normalisation and
-is not plotted for 2015–2017. Only `AHI` and `EWS_CSD` are min-max normalised in
-the EWS panel; lag-1 autocorrelation and correlation length are shown in native
-units.
-
-**Table 5 ties.** Eleven indicator pairs reach five consecutive anomalous years
-and are not separable from one another. The published table is cut at duration
-≥ 6; the full ranking, with the aggregation rule and tie-break stated
-explicitly, is written to `indicator_duration.csv`.
 
 ## Citation
 
