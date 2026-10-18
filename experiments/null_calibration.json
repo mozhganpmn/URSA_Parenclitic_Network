@@ -1,0 +1,181 @@
+{
+ "datasets": 200,
+ "surrogates": 199,
+ "series": 30,
+ "years": 14,
+ "missing": 0.1,
+ "tested_year_indices": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "results": {
+  "iid": {
+   "circular shift, fixed references": {
+    "rate": 0.249,
+    "ci95": [
+     0.234,
+     0.265
+    ]
+   },
+   "detrended circular shift, refitted": {
+    "rate": 0.034,
+    "ci95": [
+     0.026,
+     0.043
+    ]
+   },
+   "increment shift, refitted": {
+    "rate": 0.029,
+    "ci95": [
+     0.021,
+     0.038
+    ]
+   }
+  },
+  "AR(1)": {
+   "circular shift, fixed references": {
+    "rate": 0.215,
+    "ci95": [
+     0.202,
+     0.228
+    ]
+   },
+   "detrended circular shift, refitted": {
+    "rate": 0.042,
+    "ci95": [
+     0.033,
+     0.052
+    ]
+   },
+   "increment shift, refitted": {
+    "rate": 0.038,
+    "ci95": [
+     0.029,
+     0.047
+    ]
+   }
+  },
+  "independent trends": {
+   "circular shift, fixed references": {
+    "rate": 0.004,
+    "ci95": [
+     0.002,
+     0.008
+    ]
+   },
+   "detrended circular shift, refitted": {
+    "rate": 0.079,
+    "ci95": [
+     0.068,
+     0.092
+    ]
+   },
+   "increment shift, refitted": {
+    "rate": 0.039,
+    "ci95": [
+     0.03,
+     0.049
+    ]
+   }
+  },
+  "common trend": {
+   "circular shift, fixed references": {
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "detrended circular shift, refitted": {
+    "rate": 0.088,
+    "ci95": [
+     0.076,
+     0.102
+    ]
+   },
+   "increment shift, refitted": {
+    "rate": 0.042,
+    "ci95": [
+     0.032,
+     0.052
+    ]
+   }
+  },
+  "saturating": {
+   "circular shift, fixed references": {
+    "rate": 0.054,
+    "ci95": [
+     0.045,
+     0.064
+    ]
+   },
+   "detrended circular shift, refitted": {
+    "rate": 0.012,
+    "ci95": [
+     0.007,
+     0.018
+    ]
+   },
+   "increment shift, refitted": {
+    "rate": 0.01,
+    "ci95": [
+     0.006,
+     0.015
+    ]
+   }
+  },
+  "common factor": {
+   "circular shift, fixed references": {
+    "rate": 0.078,
+    "ci95": [
+     0.067,
+     0.089
+    ]
+   },
+   "detrended circular shift, refitted": {
+    "rate": 0.097,
+    "ci95": [
+     0.086,
+     0.109
+    ]
+   },
+   "increment shift, refitted": {
+    "rate": 0.089,
+    "ci95": [
+     0.077,
+     0.102
+    ]
+   }
+  },
+  "random walk": {
+   "circular shift, fixed references": {
+    "rate": 0.121,
+    "ci95": [
+     0.108,
+     0.134
+    ]
+   },
+   "detrended circular shift, refitted": {
+    "rate": 0.085,
+    "ci95": [
+     0.073,
+     0.097
+    ]
+   },
+   "increment shift, refitted": {
+    "rate": 0.056,
+    "ci95": [
+     0.046,
+     0.066
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,823 @@
+{
+ "groups": [
+  [
+   "factor",
+   "stationary",
+   0.7,
+   0.1
+  ],
+  [
+   "factor",
+   "stationary",
+   0.9,
+   0.1
+  ],
+  [
+   "factor",
+   "stationary",
+   0.9,
+   0.3
+  ],
+  [
+   "factor",
+   "stationary",
+   0.9,
+   0.5
+  ],
+  [
+   "factor",
+   "trending",
+   0.7,
+   0.1
+  ],
+  [
+   "factor",
+   "trending",
+   0.9,
+   0.1
+  ],
+  [
+   "level",
+   "random walk",
+   0.1
+  ],
+  [
+   "level",
+   "saturating",
+   0.1
+  ],
+  [
+   "level",
+   "stationary",
+   0.1
+  ],
+  [
+   "level",
+   "stationary",
+   0.3
+  ],
+  [
+   "level",
+   "stationary",
+   0.5
+  ],
+  [
+   "level",
+   "trending",
+   0.1
+  ],
+  [
+   "level",
+   "trending",
+   0.3
+  ],
+  [
+   "level",
+   "trending",
+   0.5
+  ],
+  [
+   "pairs",
+   "stationary",
+   0.1
+  ],
+  [
+   "pairs",
+   "trending",
+   0.1
+  ]
+ ],
+ "scenarios": [
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.1,
+   "delta": 2,
+   "id": 0,
+   "group": [
+    "level",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.1,
+   "delta": 3,
+   "id": 1,
+   "group": [
+    "level",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.1,
+   "delta": 4,
+   "id": 2,
+   "group": [
+    "level",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 2,
+   "id": 3,
+   "group": [
+    "level",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 3,
+   "id": 4,
+   "group": [
+    "level",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 4,
+   "id": 5,
+   "group": [
+    "level",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.3,
+   "lam": 0.9,
+   "id": 6,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.6,
+   "lam": 0.9,
+   "id": 7,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 1.0,
+   "lam": 0.9,
+   "id": 8,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.3,
+   "lam": 0.7,
+   "id": 9,
+   "group": [
+    "factor",
+    "stationary",
+    0.7,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.6,
+   "lam": 0.7,
+   "id": 10,
+   "group": [
+    "factor",
+    "stationary",
+    0.7,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 1.0,
+   "lam": 0.7,
+   "id": 11,
+   "group": [
+    "factor",
+    "stationary",
+    0.7,
+    0.1
+   ]
+  },
+  {
+   "family": "C",
+   "kind": "opposing",
+   "base": "stationary",
+   "miss": 0.1,
+   "delta": 1.0,
+   "lam": 0.9,
+   "id": 12,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "C",
+   "kind": "opposing",
+   "base": "stationary",
+   "miss": 0.1,
+   "delta": 1.5,
+   "lam": 0.9,
+   "id": 13,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "C",
+   "kind": "opposing",
+   "base": "stationary",
+   "miss": 0.1,
+   "delta": 2.0,
+   "lam": 0.9,
+   "id": 14,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.1,
+   "delta": 2,
+   "id": 15,
+   "group": [
+    "level",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.1,
+   "delta": 3,
+   "id": 16,
+   "group": [
+    "level",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.1,
+   "delta": 4,
+   "id": 17,
+   "group": [
+    "level",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 2,
+   "id": 18,
+   "group": [
+    "level",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 3,
+   "id": 19,
+   "group": [
+    "level",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "A",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 4,
+   "id": 20,
+   "group": [
+    "level",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.3,
+   "lam": 0.9,
+   "id": 21,
+   "group": [
+    "factor",
+    "trending",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.6,
+   "lam": 0.9,
+   "id": 22,
+   "group": [
+    "factor",
+    "trending",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 1.0,
+   "lam": 0.9,
+   "id": 23,
+   "group": [
+    "factor",
+    "trending",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.3,
+   "lam": 0.7,
+   "id": 24,
+   "group": [
+    "factor",
+    "trending",
+    0.7,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.6,
+   "lam": 0.7,
+   "id": 25,
+   "group": [
+    "factor",
+    "trending",
+    0.7,
+    0.1
+   ]
+  },
+  {
+   "family": "B",
+   "kind": "break",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 1.0,
+   "lam": 0.7,
+   "id": 26,
+   "group": [
+    "factor",
+    "trending",
+    0.7,
+    0.1
+   ]
+  },
+  {
+   "family": "C",
+   "kind": "opposing",
+   "base": "trending",
+   "miss": 0.1,
+   "delta": 1.0,
+   "lam": 0.9,
+   "id": 27,
+   "group": [
+    "factor",
+    "trending",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "C",
+   "kind": "opposing",
+   "base": "trending",
+   "miss": 0.1,
+   "delta": 1.5,
+   "lam": 0.9,
+   "id": 28,
+   "group": [
+    "factor",
+    "trending",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "C",
+   "kind": "opposing",
+   "base": "trending",
+   "miss": 0.1,
+   "delta": 2.0,
+   "lam": 0.9,
+   "id": 29,
+   "group": [
+    "factor",
+    "trending",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 30,
+   "group": [
+    "level",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.3,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 31,
+   "group": [
+    "level",
+    "stationary",
+    0.3
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "level",
+   "base": "stationary",
+   "miss": 0.5,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 32,
+   "group": [
+    "level",
+    "stationary",
+    0.5
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 33,
+   "group": [
+    "level",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.3,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 34,
+   "group": [
+    "level",
+    "trending",
+    0.3
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "level",
+   "base": "trending",
+   "miss": 0.5,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 35,
+   "group": [
+    "level",
+    "trending",
+    0.5
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "opposing",
+   "base": "stationary",
+   "miss": 0.1,
+   "delta": 1.5,
+   "lam": 0.9,
+   "id": 36,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.1
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "opposing",
+   "base": "stationary",
+   "miss": 0.3,
+   "delta": 1.5,
+   "lam": 0.9,
+   "id": 37,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.3
+   ]
+  },
+  {
+   "family": "D",
+   "kind": "opposing",
+   "base": "stationary",
+   "miss": 0.5,
+   "delta": 1.5,
+   "lam": 0.9,
+   "id": 38,
+   "group": [
+    "factor",
+    "stationary",
+    0.9,
+    0.5
+   ]
+  },
+  {
+   "family": "E",
+   "kind": "pairs",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.3333333333333333,
+   "rho": 0.9,
+   "id": 39,
+   "group": [
+    "pairs",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "E",
+   "kind": "pairs",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 0.6666666666666666,
+   "rho": 0.9,
+   "id": 40,
+   "group": [
+    "pairs",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "E",
+   "kind": "pairs",
+   "base": "stationary",
+   "miss": 0.1,
+   "frac": 1.0,
+   "rho": 0.9,
+   "id": 41,
+   "group": [
+    "pairs",
+    "stationary",
+    0.1
+   ]
+  },
+  {
+   "family": "E",
+   "kind": "pairs",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.3333333333333333,
+   "rho": 0.9,
+   "id": 42,
+   "group": [
+    "pairs",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "E",
+   "kind": "pairs",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 0.6666666666666666,
+   "rho": 0.9,
+   "id": 43,
+   "group": [
+    "pairs",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "E",
+   "kind": "pairs",
+   "base": "trending",
+   "miss": 0.1,
+   "frac": 1.0,
+   "rho": 0.9,
+   "id": 44,
+   "group": [
+    "pairs",
+    "trending",
+    0.1
+   ]
+  },
+  {
+   "family": "F",
+   "kind": "level",
+   "base": "saturating",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 45,
+   "group": [
+    "level",
+    "saturating",
+    0.1
+   ]
+  },
+  {
+   "family": "F",
+   "kind": "level",
+   "base": "saturating",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 3,
+   "id": 46,
+   "group": [
+    "level",
+    "saturating",
+    0.1
+   ]
+  },
+  {
+   "family": "F",
+   "kind": "level",
+   "base": "random walk",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 2.5,
+   "id": 47,
+   "group": [
+    "level",
+    "random walk",
+    0.1
+   ]
+  },
+  {
+   "family": "F",
+   "kind": "level",
+   "base": "random walk",
+   "miss": 0.1,
+   "frac": 0.3,
+   "delta": 3,
+   "id": 48,
+   "group": [
+    "level",
+    "random walk",
+    0.1
+   ]
+  }
+ ],
+ "D": 5000,
+ "Dn": 10000,
+ "plan_sha256": "39e25c4e0c5703c9a7316c574a168393558c4e6cee5bc7148465f27821f970e9",
+ "seeds": {
+  "gate_data": 20261101,
+  "gate_surr": 20261102,
+  "null_base": 5000000,
+  "event_base": 6000000
+ },
+ "J": 10,
+ "names": [
+  "NAD-M",
+  "CON-M",
+  "REL-M",
+  "NAD-T",
+  "CON-T",
+  "REL-T",
+  "UED-M",
+  "dT2-M",
+  "SPE-M",
+  "UED-T",
+  "dT2-T",
+  "SPE-T"
+ ]
+}

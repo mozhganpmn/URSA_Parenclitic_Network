@@ -1,0 +1,112 @@
+{
+ "datasets": 150,
+ "surrogates": 199,
+ "series": 30,
+ "years": 14,
+ "target_index": 10,
+ "base": "AR(1) phi=0.5 around independent linear trends, 10% missing",
+ "results": [
+  {
+   "frac": 0.1,
+   "delta": 0,
+   "fixed_reference": 0.02,
+   "increment_refit": 0.04
+  },
+  {
+   "frac": 0.1,
+   "delta": 1,
+   "fixed_reference": 0.1,
+   "increment_refit": 0.1
+  },
+  {
+   "frac": 0.1,
+   "delta": 2,
+   "fixed_reference": 0.147,
+   "increment_refit": 0.193
+  },
+  {
+   "frac": 0.1,
+   "delta": 3,
+   "fixed_reference": 0.367,
+   "increment_refit": 0.347
+  },
+  {
+   "frac": 0.1,
+   "delta": 4,
+   "fixed_reference": 0.6,
+   "increment_refit": 0.56
+  },
+  {
+   "frac": 0.2,
+   "delta": 1,
+   "fixed_reference": 0.04,
+   "increment_refit": 0.067
+  },
+  {
+   "frac": 0.2,
+   "delta": 2,
+   "fixed_reference": 0.367,
+   "increment_refit": 0.387
+  },
+  {
+   "frac": 0.2,
+   "delta": 3,
+   "fixed_reference": 0.767,
+   "increment_refit": 0.753
+  },
+  {
+   "frac": 0.2,
+   "delta": 4,
+   "fixed_reference": 0.947,
+   "increment_refit": 0.967
+  },
+  {
+   "frac": 0.3,
+   "delta": 1,
+   "fixed_reference": 0.107,
+   "increment_refit": 0.16
+  },
+  {
+   "frac": 0.3,
+   "delta": 2,
+   "fixed_reference": 0.56,
+   "increment_refit": 0.613
+  },
+  {
+   "frac": 0.3,
+   "delta": 3,
+   "fixed_reference": 0.92,
+   "increment_refit": 0.953
+  },
+  {
+   "frac": 0.3,
+   "delta": 4,
+   "fixed_reference": 1.0,
+   "increment_refit": 1.0
+  },
+  {
+   "frac": 0.5,
+   "delta": 1,
+   "fixed_reference": 0.253,
+   "increment_refit": 0.287
+  },
+  {
+   "frac": 0.5,
+   "delta": 2,
+   "fixed_reference": 0.86,
+   "increment_refit": 0.88
+  },
+  {
+   "frac": 0.5,
+   "delta": 3,
+   "fixed_reference": 1.0,
+   "increment_refit": 1.0
+  },
+  {
+   "frac": 0.5,
+   "delta": 4,
+   "fixed_reference": 1.0,
+   "increment_refit": 1.0
+  }
+ ]
+}
