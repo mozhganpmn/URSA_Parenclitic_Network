@@ -40,7 +40,7 @@ def gen_level(rng, base, frac, delta, miss):
     if k: idx = rng.choice(M, k, replace=False); x[idx, J] += delta*rng.choice([-1, 1], k)
     return bm.finish(x, rng, miss)
 def gen_pairs(rng, base, share, rho, miss):
-    """Fifteen disjoint pairs with within-pair correlation rho. In the event year one member of a share of the pairs takes
+    """Fifteen disjoint pairs with loading rho on a pair factor (absolute within-pair correlation rho**2). In the event year one member of a share of the pairs takes
     an independent draw of the shared component (same variance, so no marginal changes)."""
     K = M//2; f = ar1(rng, (K, T)); eta = ar1(rng, (M, T)); sg = rng.choice([-1, 1], M); pid = np.repeat(np.arange(K), 2)
     x = rho*sg[:, None]*f[pid] + np.sqrt(1 - rho**2)*eta

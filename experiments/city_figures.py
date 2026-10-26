@@ -47,7 +47,7 @@ for city in ['Vancouver', 'Calgary']:
     C[city] = dict(full=full, x=x, node=node, inds=inds, ind=ind, doms=doms, dom=dom, yi=yi, dom_of=dom_of, yc=yc)
     dd = pd.DataFrame(dom, index=doms, columns=yc)[RY]
     r = dict(domain_scores={d: {int(y): round(float(v), 3) for y, v in dd.loc[d].items()} for d in doms}, domain_peak={d: [int(dd.loc[d].idxmax()), round(float(dd.loc[d].max()), 3)] for d in doms})
-    for y in ([2020, 2023] if city == 'Vancouver' else [2015, 2020, 2023]):
+    for y in ([2020, 2023] if city == 'Vancouver' else [2015, 2020, 2023, 2024]):
         j = yi[y]; ex = node[:, j] - np.array([oth(node[k], yi, y) if np.isfinite(node[k]).any() else np.nan for k in range(len(x))]); order = [int(k) for k in np.argsort(-np.where(np.isfinite(ex), ex, -9))[:10]]
         exr = nraw[:, j] - np.array([oth(nraw[k], yi, y) if np.isfinite(nraw[k]).any() else np.nan for k in range(len(x))]); top_r = set(int(k) for k in np.argsort(-np.where(np.isfinite(exr), exr, -9))[:10])
         rows = []

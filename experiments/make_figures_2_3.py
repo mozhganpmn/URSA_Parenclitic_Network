@@ -40,7 +40,7 @@ with mpl.rc_context(FIG_RC):
     for k, c, m, lw in [('fpr_chi2', FIG_ORANGE, 'o', 1.1), ('fpr_F', FIG_BLUE, 'o', 2.0)]:
         a.plot(_n, [r[k] for r in _mc], marker=m, color=c, lw=lw, ms=4 if lw > 1.5 else 3.2,
                mec='white', mew=0.6, zorder=3 if lw > 1.5 else 2)
-    for txt, xy, c in [('$\\chi^2$', (6.0, 0.25), FIG_ORANGE), ('$F$ (this work)', (3.0, 0.085), FIG_BLUE)]:
+    for txt, xy, c in [('$\\chi^2$', (7.0, 0.31), FIG_ORANGE), ('$F$ (this work)', (3.0, 0.105), FIG_BLUE)]:
         a.text(*xy, txt, color=c, fontsize=6.0, fontweight='bold' if 'this' in txt else 'normal')
     a.set_xscale('log'); a.minorticks_off(); a.set_xticks([3, 5, 10, 20, 50]); a.set_xticklabels(['3', '5', '10', '20', '50'])
     a.set_xlim(2.7, 52.5); a.set_ylim(-0.02, 0.65)
@@ -55,13 +55,13 @@ with mpl.rc_context(FIG_RC):
     b.set_xlim(2.7, 52); b.set_xlabel('Training window $n$'); b.set_ylabel('Threshold $w^*$ ($\\sigma$)')
     b.text(3.4, 31, '32.6 at $n=3$', fontsize=6, color=FIG_INK2, va='center')
     b.text(50, 2.75, '$F$', ha='right', color=FIG_BLUE, fontsize=6.3, fontweight='bold')
-    b.text(50, 2.15, '$\\chi^2$ = 2.45', ha='right', color=FIG_ORANGE, fontsize=6.3)
+    b.text(3.2, 2.52, '$\\chi^2$ = 2.45', ha='left', va='bottom', color=FIG_ORANGE, fontsize=6.3)
     fig_letter(b, 'b', x=-0.36)
     c = ax[2]; _q = _pwr[_pwr.n == 7].sort_values('delta')
     c.axhline(0.05, color=FIG_INK2, lw=0.6)
     c.plot(_q.delta, _q.sa_lfo, 'o-', color=FIG_BLUE, lw=2.0, ms=4, mec='white', mew=0.6, zorder=3)
     c.plot(_q.delta, _q.sa_whole, 'D-', color='#b5b4af', lw=1.1, ms=3.2, mec='white', mew=0.6)
-    c.text(2.2, 0.86, 'LFO reference', color=FIG_BLUE, fontsize=6.0, fontweight='bold', ha='right')
+    c.text(0.3, 0.93, 'LFO reference', color=FIG_BLUE, fontsize=6.0, fontweight='bold', ha='left')
     c.text(6, 0.10, 'whole-record\nreference', color='#9d9c97', fontsize=6.0, ha='right')
     c.set_ylim(0, 1.04); c.set_xlim(-0.2, 6.2); c.set_xticks([0, 1, 2, 3, 4, 6])
     c.set_xlabel('Break size $\\delta$ (SD)'); c.set_ylabel('Power at 5% false positives')

@@ -58,7 +58,7 @@ def tab_power(keys, cap, label):
 def fix(tex): return tex
 cappow = ('\\textbf{Detection power at a matched 5\\%% false-positive rate, %s.} Power in the event year (year index 10, so up to ten earlier years) for 30 series over 14 years, '
           'from %d datasets with the event and %d datasets of the same process without it (Monte Carlo standard error at most 0.007). Families: A, level shift; B, relationship break in a three-block factor model; '
-          'C, opposing shift in the same model; D, missing values (10, 30 and 50\\%% missing; opposing shifts use $\\delta = 1.5$ and $\\lambda = 0.9$); E, sparse pair breaks (fifteen disjoint pairs with correlation 0.9, one member takes an independent draw), '
+          'C, opposing shift in the same model; D, missing values (10, 30 and 50\\%% missing; opposing shifts use $\\delta = 1.5$ and $\\lambda = 0.9$); E, sparse pair breaks (fifteen disjoint pairs with loading 0.9 and absolute within-pair correlation 0.81, one member takes an independent draw), '
           'which favours pairwise methods by design; F, level shift on saturating and random-walk bases. M, mean reference; T, linear-trend reference. %s')
 t.append(fix(tab_power(NETK, cappow % ('network statistics', S['D'], S['Dn'], 'NAD, share of activated pairs; CON, continuous pair score; REL, relationship channel; NET2, minimum-P combination of CON and REL.'), 'tab:pow_net')))
 t.append(fix(tab_power(BASEK, cappow % ('standard monitors', S['D'], S['Dn'], 'UED, univariate exceedance density; $\\mathrm{dT}^2$, diagonal Hotelling $T^2$; SPE, principal-component residual; NAD+SPE, minimum-P combination of NAD and SPE.'), 'tab:pow_base')))

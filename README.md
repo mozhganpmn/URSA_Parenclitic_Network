@@ -1,7 +1,7 @@
 # Calibrated parenclitic networks for short multivariate records
 
 Code and data for *Detecting joint departures in short multivariate records with calibrated parenclitic networks*
-(M. PourmoradNasseri, A. Gholidoust and A. Albadvi).
+(M. PourmoradNasseri).
 
 The method builds a parenclitic network for each target year from bivariate references fitted to earlier years only.
 An edge is activated when a pair of series leaves its reference by more than an exact finite-sample threshold, and the
@@ -12,7 +12,7 @@ resilience indicators for Vancouver and Calgary, 2011 to 2024.
 ## Contents
 
 ```
-data/                         Vancouver and Calgary inputs (207 sub-indicators, 2011-2024), hierarchy files
+data/                         Vancouver and Calgary inputs (217 sub-indicators, 2011-2024), hierarchy files
 parenclitic_core.py           engine: leave-future-out references, thresholds, NAD, surrogates, node and domain scores
 variants.py                   mean and linear-trend references, level (CON) and relationship (REL) channels
 parenclitic_urban_resilience.ipynb   Vancouver analysis, robustness checks, Table 1 and Fig. 4
@@ -34,7 +34,7 @@ Run every script from the repository root.
 
 ## Data
 
-`data/Input.xlsx` (Vancouver) and `data/Input_Calgary.xlsx` (Calgary) have the same 207 rows in the same order.
+`data/Input.xlsx` (Vancouver) and `data/Input_Calgary.xlsx` (Calgary) have the same 217 rows in the same order.
 `Sheet1` holds the values for 2024 to 2011. The `Harmonization` sheet gives the definition, geography, source and
 status of every row, and the `Read me` sheet explains the layout and the status labels. `data/names.csv` and
 `data/adjacency.csv` hold the indicator abbreviations and the indicator hierarchy. All series come from the public

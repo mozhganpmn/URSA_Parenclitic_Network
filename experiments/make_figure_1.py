@@ -113,7 +113,7 @@ with mpl.rc_context(FIG_RC):
     ax.axhline(0, color=FIG_INK2, lw=0.5, ls='--', zorder=1); ax.axvline(0, color=FIG_INK2, lw=0.5, ls='--', zorder=1)
     A = (6.2, 0.15); B = (0.9, 2.9)
     ax.scatter(*A, s=26, color=FIG_BLUE, marker='D', zorder=4); ax.scatter(*B, s=26, color=FIG_ORANGE, marker='D', zorder=4)
-    ax.text(A[0]+0.3, A[1]-0.55, 'A  along the usual\nco-movement:\nlevel channel', fontsize=6.0, color=FIG_BLUE, ha='center', va='top')
+    ax.text(A[0]+0.3, A[1]-0.55, 'A  along the usual\nco-movement:\noverall channel', fontsize=6.0, color=FIG_BLUE, ha='center', va='top')
     ax.text(B[0]+0.45, B[1], 'B  against it:\nboth channels', fontsize=6.0, color=FIG_ORANGE, ha='left', va='center')
     ax.text(-4.3, -1.75, 'boundary of the\nreference ($F$ law)', fontsize=5.8, color=FIG_BLUE, ha='left', va='top')
     ax.set_xticks([]); ax.set_yticks([]); ax.grid(False); ax.set_aspect('equal')
@@ -125,8 +125,8 @@ with mpl.rc_context(FIG_RC):
     def _box(x, y, w, h, txt, fc, ec, bold=False):
         ax.add_patch(plt.Rectangle((x, y), w, h, fc=fc, ec=ec, lw=0.8))
         ax.text(x+w/2, y+h/2, txt, ha='center', va='center', fontsize=5.9, color=FIG_INK, fontweight='bold' if bold else 'normal', linespacing=1.25)
-    _box(0.0, 3.7, 4.4, 2.0, 'level channel\nmean $-\\ln p$ over eligible pairs\n(departure in any direction)', '#e8f1fc', FIG_BLUE)
-    _box(0.0, 0.5, 4.4, 2.0, 'relationship channel\nminor-axis part of the distance\n(pairs with $|r| \\geq 0.7$)', '#fdeee6', FIG_ORANGE)
+    _box(0.0, 3.7, 4.4, 2.0, 'overall channel\nmean $-\\ln p$ over eligible pairs\n(departure in any direction)', '#e8f1fc', FIG_BLUE)
+    _box(0.0, 0.5, 4.4, 2.0, 'minor-axis channel\nminor-axis part of the distance\n(pairs with $|r| \\geq 0.7$)', '#fdeee6', FIG_ORANGE)
     _box(5.6, 2.1, 4.4, 2.0, 'NET2\nsmaller of the two $P$ values,\ncalibrated with the same surrogates', '#f3f2ef', FIG_INK2, bold=False)
     for y0 in (4.7, 1.5):
         ax.add_artist(FancyArrowPatch((4.5, y0), (5.5, 3.1), arrowstyle='-|>', mutation_scale=7, color=FIG_INK2, lw=0.8, shrinkA=0, shrinkB=0))
