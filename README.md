@@ -1,6 +1,6 @@
 # Calibrated parenclitic networks for short multivariate records
 
-Code and data for *Detecting joint departures in short multivariate records with calibrated parenclitic networks*
+Code and data for *Detecting multivariate anomalies in short time series with parenclitic networks*
 (M. PourmoradNasseri).
 
 The method builds a parenclitic network for each target year from bivariate references fitted to earlier years only.
@@ -57,6 +57,10 @@ sources named in the `Source` column of the `Harmonization` sheet.
 | Supplementary Table S9, minimum training window and geography | `experiments/robustness_checks.py` | `results/robustness_checks.json` |
 | Clip, CV cutoff and support-weight checks (Supplementary Note on robustness) | notebook sections 9 and 11 | `results/clip_check_output.json`, `results/sensitivity_cv_lambda.json` |
 | Edges of 2023 that were inactive in 2022 | `experiments/new_edges_2023.py` | printed |
+| Serial dependence and the held-out false-positive rate (Supplementary Note on thresholds) | `experiments/serial_dependence_pair.py` | `results/serial_dependence_pair.json` |
+| Shapiro-Wilk share and lag-1 autocorrelation of the working-set series (Data section) | `experiments/data_normality_autocorrelation.py` | `results/data_normality_autocorrelation.json` |
+| Cap applied after normalisation or removed, domain peak years (Supplementary Note on robustness) | `experiments/cap_variants_domains.py` | `results/cap_variants_domains.json` |
+| Supplementary Fig. S2, indicator-level networks of 2020 and 2023 | `experiments/network_snapshots.py` | `results/figures/FigS2_*`, `FigS2_numbers.json` |
 
 Commands used for the stored outputs:
 
